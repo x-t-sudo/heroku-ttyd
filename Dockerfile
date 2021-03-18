@@ -17,5 +17,6 @@ RUN apt update -y \
 	&& chmod +x /usr/bin/frpc \
 	&& chmod +x /usr/bin/ttyd	
 ENV LANG C.UTF-8
+EXPOSE 8080
 WORKDIR /home
 CMD /configure.sh
